@@ -1,0 +1,31 @@
+header, main, footer {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
+
+h2 {
+	font-weight: bolder;
+	margin-top: -5px;
+	padding-bottom: 30px;
+}
+
+.no-shadows {
+    box-shadow: none!important;
+}
+
+.nav-item {
+	width: 90%;
+	border-radius: 6px 0 0 6px;
+	margin-bottom: 4px;
+	margin-top: 4px; 
+	height: 40px;
+}
+
+.sidenav li.active {
+  background-color: #3f51b5!important;
+}
