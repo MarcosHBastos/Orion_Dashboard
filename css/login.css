@@ -1,32 +1,13 @@
 html, body {
 	height: 100vh;
 	overflow-y: hidden;
-	font-family: Roboto;
 }
 .fill {
 	min-height: 100vh !important;
 }
 
-
 .c1 {
 	padding:50px;
-}
-
-h2 {
-	padding-bottom: 15%;
-	color: #1976d2!important;
-}
-
-h2, h4 {
-	font-weight: bolder;
-}
-
-h4, h5 {
-	color: white;
-}
-
-h5 {
-
 }
 
 /* label color */
@@ -34,21 +15,39 @@ h5 {
 	color: #0d47a1!important;
 	font-weight: bolder;
 }
-.input-field input[type="text"] {
+.input-field input[type="email"] {
 	width: 99%;
 	border-bottom: none!important;
 }
 /* label focus color */
-.input-field input[type=text]:focus + label {
+.input-field input[type=email]:focus + label {
 	color: #0d47a1!important;
 }
 /* label underline focus color */
-.input-field input[type=text]:focus {
+.input-field input[type=email]:focus {
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
 /* invalid color */
-.input-field input[type=text].invalid {
+.input-field input[type=email].invalid {
+	border-bottom: none!important;
+	box-shadow: none!important;
+}
+.input-field input[type="password"] {
+	width: 99%;
+	border-bottom: none!important;
+}
+/* label focus color */
+.input-field input[type=password]:focus + label {
+	color: #0d47a1!important;
+}
+/* label underline focus color */
+.input-field input[type=password]:focus {
+	border-bottom: none!important;
+	box-shadow: none!important;
+}
+/* invalid color */
+.input-field input[type=password].invalid {
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
