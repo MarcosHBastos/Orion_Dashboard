@@ -81,7 +81,6 @@ h4 {
 	box-shadow: none!important;
 }
 .input-field input[type="password"] {
-	width: 99%;
 	border-bottom: none!important;
 }
 /* label underline focus color */
@@ -89,13 +88,12 @@ h4 {
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
-/* invalid color */
-.input-field input[type=password].invalid {
+.input-field input[type=password].valid {
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
-
-.input-field input[type=password].valid {
+/* invalid color */
+.input-field input[type=password].invalid {
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
