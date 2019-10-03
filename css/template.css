@@ -119,3 +119,11 @@ h4 {
 	height: 120px;
 	color: #64b5f6!important;
 }
+
+.custom-row {
+	padding-left: 10px!important;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: #e3f2fd;
+}
