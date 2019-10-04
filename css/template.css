@@ -116,16 +116,16 @@ h4 {
 }
 
 .custom-card {
-	height: 120px;
-	color: #64b5f6!important;
+	padding: 0!important;
 }
 
-.custom-row {
+.card-row {
 	margin-bottom: 2px!important;
 }
 
 .custom-row:hover {
 	background-color: #e3f2fd;
+	margin-bottom: 2px!important;
 }
 
 .round-corners {
