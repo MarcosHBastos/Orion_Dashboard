@@ -1,6 +1,6 @@
 header, main, footer {
 	padding-left: 300px;
-	font-family: Roboto;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 @media only screen and (max-width : 992px) {
@@ -121,11 +121,20 @@ h4 {
 
 .card-row {
 	margin-bottom: 2px!important;
+	font-weight: bold;
+}
+
+.card-header {
+	color:#5c6bc0;
+}
+
+.custom-row {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	margin-bottom: 0;
 }
 
 .custom-row:hover {
 	background-color: #e3f2fd;
-	margin-bottom: 2px!important;
 }
 
 .round-corners {
@@ -134,4 +143,21 @@ h4 {
 
 .admin-table {
 	margin-left: 0;
+}
+
+.student-image {
+	width: 20%;
+	height: 20%;
+}
+
+.ban-button {
+	color:#ef5350;
+	font-weight: bold;
+	margin-top: 15px;
+	border-radius: 20px;
+	width: 150px;
+}
+
+.group-card {
+	font-weight: bold;
 }
