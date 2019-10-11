@@ -5,7 +5,7 @@ main,
 footer {
   padding-left: 300px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
@@ -98,7 +98,7 @@ h4 {
 
 
 table.highlight>tbody>tr:hover {
-    background-color: #e3f2fd !important;
+  background-color: #e3f2fd !important;
 }
 
 .round-corners {
@@ -147,4 +147,34 @@ table.highlight>tbody>tr:hover {
 .custom-modal {
   border-radius: 6px;
   width: 20%;
+}
+
+.custom-field {
+  border-radius: 6px;
+  height: 51px;
+}
+
+.custom-field input[type=text],
+.custom-field input[type=email],
+.custom-field input[type=password],
+.custom-field input[type=text]:focus,
+.custom-field input[type=email]:focus,
+.custom-field input[type=password]:focus,
+.custom-field input[type=text].valid,
+.custom-field input[type=email].valid,
+.custom-field input[type=password].valid,
+.custom-field input[type=text].invalid,
+.custom-field input[type=email].invalid,
+.custom-field input[type=password].invalid {
+  border-bottom: none!important;
+  box-shadow: none!important;
+}
+
+.search-field input[type=text]:focus + label {
+ color: #64b5f6!important;
+}
+
+.search-field input[type=text]:focus {
+  border-bottom: 1px solid #64b5f6!important;
+  box-shadow: 0 1px 0 0 #64b5f6!important;
 }
