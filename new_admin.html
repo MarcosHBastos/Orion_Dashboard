@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<title>Orion - Adicionar Administrador</title>
+</head>
+
+<body>
+	<header>
+		<nav class="transparent no-shadows">
+			<div class="nav-wrapper">
+				<a href="#" data-target="slide-out" class="sidenav-trigger">
+					<i class="large material-icons blue-text accent-2">menu</i>
+				</a>
+				<ul id="nav-mobile" class="right">
+					<li>
+						<a href="index.html"><i class="large material-icons blue-text accent-2">logout</i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<ul id="slide-out" class="sidenav sidenav-fixed blue accent-2 white-text">
+		<li>
+			<div class="user-view center">
+				<h2>LOGO</h2>
+			</div>
+		</li>
+		<li class="nav-item z-depth-1 right"><a href="admins.html" class="white-text">Admins</a></li>
+		<li class="nav-item z-depth-1 right"><a href="institutions.html" class="white-text">Instituições</a></li>
+		<li class="nav-item z-depth-1 right"><a href="courses.html" class="white-text">Cursos</a></li>
+		<li class="nav-item z-depth-1 right"><a href="subjects.html" class="white-text">Disciplinas</a></li>
+		<li class="nav-item z-depth-1 right"><a href="questions.html" class="white-text">Questões</a></li>
+		<li class="nav-item z-depth-1 right"><a href="content.html" class="white-text">Conteúdo</a></li>
+		<li class="nav-item z-depth-1 right"><a href="students.html" class="white-text">Alunos</a></li>
+		<li class="nav-item z-depth-1 right"><a href="groups.html" class="white-text">Grupos</a></li>
+	</ul>
+
+
+	<main class="container custom-container">
+		<div class="row title left">
+			<div class="col s12">
+				Adicionar Administrador
+			</div>
+		</div>
+		<div class="row description left">
+			<div class="col s12">
+				Preencha os dados do administrador
+			</div>
+		</div>
+
+		<div class="row"></div>
+
+		<form name="registration" action="admins.html" method="POST">
+			<div class="row">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 description form-label">Nome</div>
+				<div class="col s1 m2 l3"></div>	
+			</div>
+			<div class="row move-up">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 input-field z-depth-1 round-corners">
+					<input type="text" class="validate" name="nome" required placeholder="Nome">
+					<div class="col s1 m2 l3"></div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 description form-label">Email</div>
+				<div class="col s1 m2 l3"></div>	
+			</div>
+			<div class="row move-up">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 input-field z-depth-1 round-corners">
+					<input type="email" name="email" class="validate" required placeholder="Email">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 description form-label">Senha</div>
+				<div class="col s1 m2 l3"></div>	
+			</div>
+			<div class="row move-up">
+				<div class="col s1 m2 l3"></div>	
+				<div class="col s10 m8 l6 input-field z-depth-1 round-corners">
+					<input type="password" class="validate"name="senha" required minlength="8" placeholder="Senha">
+				</div>
+				<div class="col s1 m2 l3"></div>	
+			</div>
+			<div class="row center">
+				<input type="submit" class="btn center blue accent-2 custom-button" value="SALVAR"/>
+			</div>
+		</form>
+		
+	</main>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.sidenav').sidenav();
+		});
+	</script>
+</body>
+</html>

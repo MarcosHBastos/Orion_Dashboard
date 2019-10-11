@@ -1,6 +1,8 @@
 html, body {
 	height: 100vh;
 	overflow-y: hidden;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .fill {
 	min-height: 100vh !important;
@@ -8,35 +10,6 @@ html, body {
 
 .c1 {
 	padding:50px;
-}
-
-/* label color */
-.input-field label {
-	color: #0d47a1!important;
-	font-weight: bolder;
-}
-.input-field 
-input[type=email],
-input[type=password] {
-	width: 99%;
-	border-bottom: none!important;
-}
-/* label focus color */
-.input-field 
-input[type=email]:focus + label,
-input[type=password]:focus + label {
-	color: #0d47a1!important;
-}
-/*remove undesired color components*/
-.input-field 
-input[type=email]:focus,
-input[type=email].valid,
-input[type=email].invalid,
-input[type=password]:focus,
-input[type=password].valid,
-input[type=password].invalid {
-	border-bottom: none!important;
-	box-shadow: none!important;
 }
 
 .custom-field {
@@ -47,4 +20,9 @@ input[type=password].invalid {
 	border-radius: 20px;
 	width:50%;
 	letter-spacing: 4px;
+	font-weight: bolder;
+}
+
+.forgot:hover {
+	font-weight: bold;
 }

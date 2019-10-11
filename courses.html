@@ -36,7 +36,6 @@
 		<li class="nav-item z-depth-1 right"><a href="groups.html" class="white-text">Grupos</a></li>
 	</ul>
 
-
 	<main class="container custom-container">
 		<div class="row title left">
 			<div class="col s12">
@@ -49,66 +48,65 @@
 			</div>
 		</div>
 
-
 		<div class="section no-pad-bot" id="index-banner">
 			<div class="container">
 				<div class="row center">
-					<div class="header col s12"><img class="responsive-img custom-image" src="assets/undraw_deliveries_131a@3x.png"></div>
+					<div class="col s12"><img class="responsive-img custom-image" src="assets/undraw_deliveries_131a@3x.png"></div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col s12">
-					<div class="row">
-						<div class="input-field col s12">
-							<i class="material-icons prefix blue-text lighten-2">search</i>
-							<input type="text" id="autocomplete-input" class="autocomplete custom-field">
-							<label for="autocomplete-input">Informe o nome ou parte dele</label>
-						</div>
-					</div>
+				<div class="col s1"></div>
+				<div class="input-field col s10">
+					<i class="material-icons prefix blue-text lighten-2">search</i>
+					<input type="text" id="autocomplete-input" class="autocomplete custom-field">
+					<label for="autocomplete-input">Informe o nome ou parte dele</label>
 				</div>
+				<div class="col s1"></div>
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row valign-wrapper">
-				<div class="col s10 description"> Nome</div>
-				<div class="col s2 center description">Ação</div>
-			</div>
-		</div>
-		<div class="container z-depth-1 round-corners">
-			<div class="row valign-wrapper custom-row">
-				<div class="col s10 truncate">TADS</div>
-				<div class="col s2 center">	
-					<a href="#"><i class="material-icons blue-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
-				</div>
-			</div>
-			<div class="row valign-wrapper custom-row">
-				<div class="col s10 truncate">Medicina</div>
-				<div class="col s2 center">	
-					<a href="#"><i class="material-icons blue-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
-				</div>
-			</div>
-			<div class="row valign-wrapper custom-row">
-				<div class="col s10 truncate">Economia</div>
-				<div class="col s2 center">	
-					<a href="#"><i class="material-icons blue-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
-				</div>
-			</div>
-			<div class="row valign-wrapper custom-row">
-				<div class="col s10 truncate">Direito</div>
-				<div class="col s2 center">	
-					<a href="#"><i class="material-icons blue-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
-				</div>
-			</div>
-			<div class="row valign-wrapper custom-row">
-				<div class="col s10 truncate">Engenharia Mecânica</div>
-				<div class="col s2 center">	
-					<a href="#"><i class="material-icons blue-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
-				</div>
-			</div>
-		</div>
+		<table class="z-depth-1 round-corners highlight">
+			<thead>
+				<tr class="description">
+					<th>Nome</th>
+					<th class="center">Ação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>TADS</td>
+					<td class="center">
+						<a href="#" data-target="confirm-modal" class="modal-trigger"><i class="material-icons red-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Medicina</td>
+					<td class="center">
+						<a href="#" data-target="confirm-modal" class="modal-trigger"><i class="material-icons red-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Economia</td>
+					<td class="center">
+						<a href="#" data-target="confirm-modal" class="modal-trigger"><i class="material-icons red-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Direito</td>
+					<td class="center">
+						<a href="#" data-target="confirm-modal" class="modal-trigger"><i class="material-icons red-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Engenharia Mecânica</td>
+					<td class="center">
+						<a href="#" data-target="confirm-modal" class="modal-trigger"><i class="material-icons red-text accent-1 tooltipped" data-position="bottom" data-tooltip="Excluir">delete</i></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<ul class="pagination center">
 			<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
 			<li class="active blue lighten-2"><a href="#!">1</a></li>
@@ -119,9 +117,19 @@
 			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 		</ul>
 	</main>
+	
+	<div id="confirm-modal" class="modal center valign-wrapper custom-modal">
+		<div class="modal-content">
+			<p>Excluir o curso selecionado?</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Sim</a>
+			<a class="modal-close waves-effect waves-red btn-flat">Não</a>
+		</div>
+	</div>
+
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.sidenav').sidenav();
@@ -129,7 +137,9 @@
 		$(document).ready(function(){
 			$('.tooltipped').tooltip();
 		});
-		
+		$(document).ready(function(){
+			$('.modal').modal();
+		});
 	</script>
 </body>
 </html>
